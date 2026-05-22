@@ -11,9 +11,9 @@ export default function Hero() {
       {/* Background composition */}
       <div className="absolute inset-0 -z-10 pointer-events-none">
         <div className="absolute inset-x-0 top-0 h-[55%] bg-linear-to-b from-[#f5f8ff] to-transparent" />
-        <div className="absolute -top-32 -left-32 h-[420px] w-[420px] rounded-full bg-[#2952CC]/8 blur-3xl" />
-        <div className="absolute top-1/3 -right-32 h-[380px] w-[380px] rounded-full bg-sky-200/40 blur-3xl" />
-        <div className="absolute inset-0 bg-dot-grid opacity-[0.5] [mask-image:radial-gradient(50%_50%_at_30%_30%,#000,transparent_85%)]" />
+        <div className="absolute -top-32 -left-32 h-105 w-105 rounded-full bg-[#2952CC]/8 blur-3xl" />
+        <div className="absolute top-1/3 -right-32 h-95 w-95 rounded-full bg-sky-200/40 blur-3xl" />
+        <div className="absolute inset-0 bg-dot-grid opacity-[0.5] mask-[radial-gradient(50%_50%_at_30%_30%,#000,transparent_85%)]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
@@ -154,7 +154,7 @@ export default function Hero() {
               />
 
               {/* Main image */}
-              <div className="relative aspect-[4/5] rounded-[1.8rem] overflow-hidden ring-1 ring-[#0a1f44]/10 shadow-[0_40px_80px_-30px_rgba(10,31,68,0.45)]">
+              <div className="relative aspect-4/5 rounded-[1.8rem] overflow-hidden ring-1 ring-[#0a1f44]/10 shadow-[0_40px_80px_-30px_rgba(10,31,68,0.45)]">
                 <Image
                   src="/hero-team.jpg"
                   alt="Blues Cleaners team member cleaning a window with care"
@@ -205,7 +205,7 @@ export default function Hero() {
               </div>
 
               {/* Floating service tag */}
-              <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-8 bg-[#0a1f44] text-white rounded-2xl shadow-xl shadow-black/30 p-3 sm:p-4 max-w-[12rem] sm:max-w-56">
+              <div className="absolute -bottom-4 -right-2 sm:-bottom-6 sm:-right-8 bg-[#0a1f44] text-white rounded-2xl shadow-xl shadow-black/30 p-3 sm:p-4 max-w-48 sm:max-w-56">
                 <div className="text-[9px] sm:text-[10px] font-bold tracking-[0.2em] uppercase text-white/60">
                   Today
                 </div>
@@ -228,7 +228,7 @@ export default function Hero() {
       {/* Bottom trust strip */}
       <Reveal delay={550}>
         <div className="relative mt-12 sm:mt-16 max-w-7xl mx-auto px-5 sm:px-8">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-4 p-6 sm:p-8 rounded-3xl bg-linear-to-br from-[#0a1f44] to-[#122d62] text-white shadow-2xl shadow-navy-900/20">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-6 gap-x-4 p-6 sm:p-8 rounded-3xl bg-linear-to-br from-[#0a1f44] to-navy-700 text-white shadow-2xl shadow-navy-900/20">
             {[
               { v: "12+", l: "Years of trade discipline" },
               { v: "6", l: "Specialized service lines" },
